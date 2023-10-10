@@ -5,7 +5,8 @@ body {
 }
 
 .container {
-    max-width: 1355px;
+    width: 1440px;
+    max-width: 90%;
     margin: auto;
     padding: 0 16px;
 }
@@ -53,6 +54,16 @@ header nav {
 
 header nav ul li {
     display: inline-block;
+}
+
+header nav ul li.menu-icon{
+    display: none;
+}
+
+header nav ul li.menu-icon img{
+    vertical-align: middle;
+    width: 20px;
+    height: au;
 }
 
 header nav ul li a {
@@ -122,14 +133,15 @@ section.hero {
 .hero-content button {
     width: 200px;
     height: 50px;
-    border-radius: 25px;
+    max-width: 100%;
+    border-radius: 92px;
     background-color: #3E50E5;
     color: #FFF;
-    text-align: center;
-    font-family: Heebo;
     font-size: 16px;
-    font-weight: normal;
+    font-weight: 700;
+    letter-spacing: 0.4px;
     line-height: 24px;
+    text-align: center;
     border: none;
     text-transform: uppercase;
     cursor: pointer;
@@ -388,3 +400,126 @@ footer .copyright-text {
     letter-spacing: 0.4px;
     line-height: 22px;
 }
+
+/***************************************************
+************** CSS MEDIA QUERIES *******************
+***************************************************/
+
+/* Start of Design for Desktop */
+@media screen and (max-width: 1440px) {
+
+    .container{
+        width: 1180px;
+        max-width: 90%;
+    }
+    
+    body {
+        padding-top: 70px;
+    }
+    
+    header {
+        height: 70px;
+    }
+
+    .hero-content h1 {
+        font-size: 44px;
+        letter-spacing: 1.1px;
+        line-height: 50px;
+        margin-bottom: 12px;
+    }
+    
+    .hero-content p {
+        font-size: 18px;
+        letter-spacing: 0.45px;
+        line-height: 26px;
+        margin-bottom: 12px;
+    }
+    
+    .hero-content button {
+        font-size: 14px;
+        letter-spacing: 0.35px;
+        line-height: 21px;
+    }
+
+
+}
+/* End of Design for Desktop */
+
+/* Start of Design for Tablet */
+@media screen and (max-width: 960px) {
+
+    .container{
+        max-width: 92%;
+    }
+
+    header .logo {
+        font-size: 24px;
+    }
+
+    header nav ul li {
+        display: none;
+    }
+    
+    header nav ul li.menu-icon{
+        display: inline-block;
+    }
+
+    .hero-content h1 {
+        font-size: 40px;
+        letter-spacing: 1px;
+        line-height: 46px;
+        max-width: 377px;
+    }
+    
+    .hero-content p {
+        font-size: 16px;
+        letter-spacing: 0.4px;
+        line-height: 24px;
+        max-width: 347px;
+    }
+    
+    .hero-content button {
+        width: 196px;
+    }
+
+
+}
+/* End of Design for Tablet */
+
+/* Start of Design for Mobile */
+@media screen and (max-width: 576px) {
+
+    header .logo {
+        font-size: 18px;
+    }
+
+    header .logo .blue-dot {
+        width: 7px;
+        height: 7px;
+    }
+
+    .hero-content {
+        position: static;
+    }
+
+    .hero-content h1 {
+        color: #000;
+        font-size: 32px;
+        letter-spacing: 0.8px;
+        line-height: 38px;
+        text-align: center;
+        margin-bottom: 32px;
+        margin-top: 27px;
+    }
+    
+    .hero-content p {
+        display: none;
+    }
+    
+    .hero-content button {
+        width: 196px;
+        margin: auto;
+    }
+
+}
+/* End of Design for Mobile */
